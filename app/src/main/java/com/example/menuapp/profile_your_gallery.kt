@@ -74,6 +74,8 @@ class profile_your_gallery : AppCompatActivity() {
             var saved_liked_posts: String = "saved_posts"
             gallery_text.text = "SAVED POSTS"
 
+            var flag_layout = intent.getIntExtra("flag_layout", 4)
+
             if (intent.getIntExtra("flag_layout", 4) == 5) {
                 saved_liked_posts = "liked_posts"
                 gallery_text.text = "LIKED POSTS"
@@ -87,7 +89,6 @@ class profile_your_gallery : AppCompatActivity() {
                 .addOnSuccessListener() { task ->
                     if (task.exists()) {
 
-                        var flag_layout: Int = 0
                         val data = task.data?.entries?.toList()
 
                         var contor : Int = 0
@@ -106,7 +107,6 @@ class profile_your_gallery : AppCompatActivity() {
                                             str_arr.add(ref)
 
                                             check_final(
-                                                ind,
                                                 data,
                                                 str_arr,
                                                 recycle,
@@ -117,7 +117,6 @@ class profile_your_gallery : AppCompatActivity() {
                                         }
                                         .addOnFailureListener {
                                             check_final(
-                                                ind,
                                                 data,
                                                 str_arr,
                                                 recycle,
@@ -126,13 +125,6 @@ class profile_your_gallery : AppCompatActivity() {
                                                 contor
                                             )
                                         }
-
-                                    when (element_info[2]) {
-                                        "PAINT" -> flag_layout = 0
-                                        "DRAWING" -> flag_layout = 1
-                                        "PHOTO" -> flag_layout = 2
-                                        "ANIMATION" -> flag_layout = 3
-                                    }
                                 }
 
                                 contor++
@@ -144,7 +136,6 @@ class profile_your_gallery : AppCompatActivity() {
     }
 
     private fun check_final(
-        ind: MutableMap.MutableEntry<String, Any>,
         data: List<MutableMap.MutableEntry<String, Any>>,
         str_arr: ArrayList<StorageReference>,
         recycle: RecyclerView,
@@ -154,8 +145,6 @@ class profile_your_gallery : AppCompatActivity() {
     ) {
 
         if (contor == data.size) {
-
-            Log.i("tagg", str_arr.size.toString())
 
             val str_arr_rooted =
                 ArrayList<Pair<StorageReference, StorageReference?>>()

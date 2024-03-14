@@ -49,7 +49,7 @@ class explore_global(val xml_layout : Int, val support_fragment : FragmentManage
         val btn_paint : Button = inf_lay.findViewById(R.id.explore_paint_btn)
         val btn_drawing : Button = inf_lay.findViewById(R.id.explore_drawing_btn)
         val btn_photo : Button = inf_lay.findViewById(R.id.explore_photo_btn)
-        val btn_animation : Button = inf_lay.findViewById(R.id.explore_animation_btn)
+        //val btn_animation : Button = inf_lay.findViewById(R.id.explore_animation_btn)
         val btn_random : Button = inf_lay.findViewById(R.id.explore_random_btn)
         val explore_scroll_lay : ScrollView = inf_lay.findViewById(R.id.explore_scroll_lay)
         val view_aux1 : View = inf_lay.findViewById(R.id.explore_view_aux1)
@@ -181,10 +181,10 @@ class explore_global(val xml_layout : Int, val support_fragment : FragmentManage
             btn_arr[2].performClick()
         }
 
-        btn_animation.setOnClickListener(){
+        /*btn_animation.setOnClickListener(){
             btn_animation.startAnimation(animation)
             btn_arr[3].performClick()
-        }
+        }*/
 
         val explore_relative_lay : RelativeLayout = inf_lay.findViewById(R.id.explore_relative_lay)
         val relativeParLay = explore_relative_lay.layoutParams as ConstraintLayout.LayoutParams

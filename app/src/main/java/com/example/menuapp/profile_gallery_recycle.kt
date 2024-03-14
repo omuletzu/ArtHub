@@ -19,7 +19,7 @@ import com.bumptech.glide.request.RequestOptions
 import com.google.firebase.storage.StorageReference
 import com.google.gson.Gson
 
-class profile_gallery_recycle(val str_arr : ArrayList<Pair<StorageReference, StorageReference?>>, val context : Context, val flag_layout: Int) : RecyclerView.Adapter<profile_gallery_recycle.recycle_class>() {
+class profile_gallery_recycle(val str_arr : ArrayList<Pair<StorageReference, StorageReference?>>, val context : Context, var flag_layout: Int) : RecyclerView.Adapter<profile_gallery_recycle.recycle_class>() {
 
     inner class recycle_class(itemView : View) : RecyclerView.ViewHolder(itemView){
 
@@ -70,13 +70,24 @@ class profile_gallery_recycle(val str_arr : ArrayList<Pair<StorageReference, Sto
 
                             val intent = Intent(context, add_art_preview::class.java)
 
+                            var flag_layout_var = flag_layout
+
                             intent.putExtra("uri", uri.result.toString())
                             intent.putExtra(
                                 "description",
                                 metadata.result.getCustomMetadata("description")
                             )
 
-                            when(flag_layout) {
+                            if(flag_layout > 3){
+                                when (metadata.result.getCustomMetadata("art_type")) {
+                                        "PAINT" -> flag_layout_var = 0
+                                        "DRAWING" -> flag_layout_var = 1
+                                        "PHOTO" -> flag_layout_var = 2
+                                        "ANIMATION" -> flag_layout_var = 3
+                                    }
+                            }
+
+                            when(flag_layout_var) {
                                 0 -> {
                                     intent.putExtra("t1", metadata.result.getCustomMetadata("paint_medium"))
                                     intent.putExtra("t2", metadata.result.getCustomMetadata("dimensions"))
@@ -118,7 +129,7 @@ class profile_gallery_recycle(val str_arr : ArrayList<Pair<StorageReference, Sto
                                 ) as ArrayList<String>
 
                             intent.putExtra("tags", arr_tags)
-                            intent.putExtra("frame_flag", flag_layout)
+                            intent.putExtra("frame_flag", flag_layout_var)
                             intent.putExtra("inv_post_flag", true)
                             intent.putExtra("inv_delete_flag", false)
                             intent.putExtra("author_id", metadata.result.getCustomMetadata("element_id")?.split("_")?.get(0))
