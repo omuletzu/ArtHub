@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    android:id="@+id/menu">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/profile_paint"
+            android:title="Paintings"
+            android:icon="@drawable/painting_icon">
+        </item>
+
+        <item
+            android:id="@+id/profile_draw"
+            android:title="Drawings"
+            android:icon="@drawable/sketch_icon">
+        </item>
+
+        <item
+            android:id="@+id/profile_photo"
+            android:title="Photos"
+            android:icon="@drawable/camera__icon">
+        </item>
+
+        <!-- <item
+            android:id="@+id/profile_animation"
+            android:title="Animations"
+            android:icon="@drawable/animation_icon">
+        </item> -->
+
+        <item
+            android:title="">
+            <menu>
+                <item
+                    android:id="@+id/profile_saved"
+                    android:title="Saved posts"
+                    android:icon="@drawable/save_icon">
+                </item>
+
+                <item
+                    android:id="@+id/profile_liked_posts"
+                    android:title="Liked posts"
+                    android:icon="@drawable/star_icon">
+                </item>
+            </menu>
+        </item>
+    </group>
+</menu>

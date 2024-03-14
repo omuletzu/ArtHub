@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stop all notifications"
+        android:fontFamily="@font/timeline"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:padding="10sp"
+        android:textColor="@color/dark_violet"
+        android:background="@color/trans">
+    </TextView>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10sp">
+
+        <RadioButton
+            android:id="@+id/settings_stop_not_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="On"
+            android:gravity="center"
+            android:fontFamily="@font/timeline"
+            android:textSize="20sp">
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/settings_stop_not_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Off"
+            android:gravity="center"
+            android:fontFamily="@font/timeline"
+            android:textSize="20sp">
+        </RadioButton>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/settings_restrict_notif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Restricted notifications"
+        android:fontFamily="@font/timeline"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:padding="10sp"
+        android:textColor="@color/dark_violet"
+        android:background="@color/trans">
+    </Button>
+
+    <Button
+        android:id="@+id/settings_quiet_hrs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quiet hours"
+        android:fontFamily="@font/timeline"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:padding="10sp"
+        android:textColor="@color/dark_violet"
+        android:background="@color/trans">
+    </Button>
+
+</LinearLayout>

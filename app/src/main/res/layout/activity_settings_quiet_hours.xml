@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".settings_change_pers_info">
+
+        <RelativeLayout
+            android:id="@+id/login_logo"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@color/blue_comb3"
+                android:scaleType="centerCrop">
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="ART HUB"
+                android:textColor="@color/black"
+                android:fontFamily="@font/timeline"
+                android:textSize="40sp"
+                android:padding="3sp"
+                android:gravity="center"
+                android:background="@color/trans">
+            </TextView>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3sp"
+            android:background="@color/dark_violet"
+            app:layout_constraintTop_toBottomOf="@+id/login_logo">
+        </View>
+
+        <LinearLayout
+            android:id="@+id/edit_profile_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/login_logo"
+            android:gravity="center"
+            android:layout_marginTop="20sp"
+            android:layout_marginStart="20sp">
+
+            <ImageButton
+                android:id="@+id/edit_profile_back"
+                android:layout_width="35sp"
+                android:layout_height="35sp"
+                android:background="@color/trans"
+                android:src="@drawable/left_arrow"
+                android:scaleType="fitXY">
+            </ImageButton>
+
+            <TextView
+                android:id="@+id/your_gallery_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/trans"
+                android:fontFamily="@font/timeline"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:padding="5sp"
+                android:text="@string/quiet_hrs"
+                android:textColor="@color/light_black"
+                android:textSize="25sp">
+            </TextView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/settings_restrict_notif_aux_text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/trans"
+            android:fontFamily="@font/timeline"
+            android:layout_weight="1"
+            android:padding="5sp"
+            android:text=" ->Your notifications will be restricted during this interval"
+            android:textColor="@color/dark_violet"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@+id/edit_profile_text"
+            android:layout_marginTop="40sp"
+            android:layout_marginStart="20sp"
+            android:layout_marginEnd="20sp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/quiet_text_enabled"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quiet hours enabled"
+            android:fontFamily="@font/timeline"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:padding="10sp"
+            android:layout_marginTop="40sp"
+            android:textColor="@color/dark_violet"
+            app:layout_constraintTop_toBottomOf="@+id/settings_restrict_notif_aux_text1">
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/quiet_radio_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10sp"
+            app:layout_constraintTop_toBottomOf="@+id/quiet_text_enabled">
+
+            <RadioButton
+                android:id="@+id/settings_quiet_on"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="On"
+                android:gravity="center"
+                android:fontFamily="@font/timeline"
+                android:textSize="20sp">
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/settings_quiet_off"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Off"
+                android:gravity="center"
+                android:fontFamily="@font/timeline"
+                android:textSize="20sp">
+            </RadioButton>
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/quiet_const_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/quiet_radio_lay">
+
+            <TextView
+                android:id="@+id/settings_quiet_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/trans"
+                android:fontFamily="@font/timeline"
+                android:layout_weight="1"
+                android:padding="5sp"
+                android:text="From"
+                android:textColor="@color/dark_violet"
+                android:textSize="20sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="40sp"
+                android:layout_marginStart="20sp"
+                android:layout_marginEnd="20sp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/settings_quiet_until"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/trans"
+                android:fontFamily="@font/timeline"
+                android:layout_weight="1"
+                android:padding="5sp"
+                android:text="Until"
+                android:textColor="@color/dark_violet"
+                android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@+id/settings_quiet_from"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="40sp"
+                android:layout_marginStart="20sp"
+                android:layout_marginEnd="20sp">
+            </TextView>
+
+            <Spinner
+                android:id="@+id/settings_quiet_from_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@+id/settings_quiet_from"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="45sp"
+                app:layout_constraintTop_toTopOf="parent">
+            </Spinner>
+
+            <Spinner
+                android:id="@+id/settings_quiet_until_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@+id/settings_quiet_until"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="45sp"
+                app:layout_constraintTop_toBottomOf="@+id/settings_quiet_from">
+            </Spinner>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/edit_profile_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="right"
+            android:text="SAVE"
+            android:textSize="23sp"
+            android:fontFamily="@font/timeline"
+            android:background="@color/trans"
+            android:textColor="@color/light_black"
+            android:layout_marginRight="40sp"
+            android:layout_marginTop="40sp"
+            android:paddingBottom="40sp"
+            android:drawableRight="@drawable/save_info_icon_sized"
+            app:layout_constraintTop_toBottomOf="@+id/quiet_const_lay"
+            app:layout_constraintEnd_toEndOf="parent">
+        </Button>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

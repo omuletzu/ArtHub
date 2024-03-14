@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/settings_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_explore">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".settings">
+
+            <RelativeLayout
+                android:id="@+id/logo"
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@color/blue_comb3"
+                    android:scaleType="centerCrop">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/trans"
+                    android:fontFamily="@font/timeline"
+                    android:gravity="center"
+                    android:padding="3sp"
+                    android:text="ART HUB"
+                    android:textColor="@color/black"
+                    android:textSize="40sp">
+                </TextView>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3sp"
+                android:background="@color/dark_violet"
+                app:layout_constraintTop_toBottomOf="@+id/logo">
+            </View>
+
+            <LinearLayout
+                android:id="@+id/gallery_document_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/logo"
+                android:gravity="center"
+                android:layout_marginTop="20sp"
+                android:layout_marginLeft="20sp">
+
+                <ImageButton
+                    android:id="@+id/gallery_btn_back"
+                    android:layout_width="35sp"
+                    android:layout_height="35sp"
+                    android:background="@color/trans"
+                    android:src="@drawable/left_arrow"
+                    android:scaleType="fitXY">
+                </ImageButton>
+
+                <TextView
+                    android:id="@+id/your_gallery_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/trans"
+                    android:fontFamily="@font/timeline"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:padding="5sp"
+                    android:text="SETTINGS"
+                    android:textColor="@color/light_black"
+                    android:textSize="25sp">
+                </TextView>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/settings_aux_view1"
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:background="@color/dark_violet_trans"
+                android:layout_marginStart="15sp"
+                android:layout_marginEnd="15sp"
+                app:layout_goneMarginTop="20sp"
+                app:layout_constraintTop_toBottomOf="@+id/gallery_document_type"
+                android:layout_marginTop="15sp">
+            </View>
+
+            <LinearLayout
+                android:id="@+id/settings_lay1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/settings_aux_view1"
+                android:layout_marginTop="65sp">
+
+                <LinearLayout
+                    android:id="@+id/settings_acc_lay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="35sp"
+                        android:layout_height="35sp"
+                        android:layout_weight="1"
+                        android:src="@drawable/profile_icon">
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Account settings"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/timeline"
+                        android:layout_gravity="center"
+                        android:gravity="center">
+                    </TextView>
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/settings_btn1"
+                    android:layout_width="20sp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="20sp"
+                    android:background="@color/trans"
+                    android:src="@drawable/right_arrow_simple"
+                    android:scaleType="centerInside"
+                    android:layout_gravity="center">
+                </ImageButton>
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/settings_frame1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/settings_lay1"
+                android:visibility="invisible"
+                android:layout_marginTop="40sp"
+                android:layout_marginStart="20sp"
+                android:layout_marginEnd="20sp">
+            </FrameLayout>
+
+            <View
+                android:id="@+id/settings_aux_view2"
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:layout_marginStart="15sp"
+                android:layout_marginEnd="15sp"
+                app:layout_constraintTop_toBottomOf="@+id/settings_frame1"
+                app:layout_constraintBottom_toTopOf="@+id/settings_lay2"
+                android:background="@color/dark_violet_trans"
+                android:visibility="invisible">
+            </View>
+
+            <LinearLayout
+                android:id="@+id/settings_lay2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/settings_lay1"
+                android:layout_marginTop="40sp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="35sp"
+                        android:layout_height="35sp"
+                        android:layout_weight="1"
+                        android:src="@drawable/dark_mode_icon">
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Dark mode"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/timeline"
+                        android:layout_gravity="center"
+                        android:gravity="center">
+                    </TextView>
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/settings_btn2"
+                    android:layout_width="20sp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="20sp"
+                    android:background="@color/trans"
+                    android:src="@drawable/right_arrow_simple"
+                    android:scaleType="centerInside"
+                    android:layout_gravity="center">
+                </ImageButton>
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/settings_frame2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/settings_lay2"
+                android:visibility="invisible"
+                android:layout_marginTop="40sp"
+                android:layout_marginStart="20sp"
+                android:layout_marginEnd="20sp">
+            </FrameLayout>
+
+            <View
+                android:id="@+id/settings_aux_view3"
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:layout_marginStart="15sp"
+                android:layout_marginEnd="15sp"
+                app:layout_constraintTop_toBottomOf="@+id/settings_frame2"
+                app:layout_constraintBottom_toTopOf="@+id/settings_lay3"
+                android:background="@color/dark_violet_trans"
+                android:visibility="invisible">
+            </View>
+
+            <LinearLayout
+                android:id="@+id/settings_lay3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/settings_lay2"
+                android:layout_marginTop="40sp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="35sp"
+                        android:layout_height="35sp"
+                        android:layout_weight="1"
+                        android:src="@drawable/notification_icon">
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Notifications"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/timeline"
+                        android:layout_gravity="center"
+                        android:gravity="center">
+                    </TextView>
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/settings_btn3"
+                    android:layout_width="20sp"
+                    android:layout_marginEnd="20sp"
+                    android:layout_height="match_parent"
+                    android:background="@color/trans"
+                    android:src="@drawable/right_arrow_simple"
+                    android:scaleType="centerInside"
+                    android:layout_gravity="center">
+                </ImageButton>
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/settings_frame3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/settings_lay3"
+                android:visibility="invisible"
+                android:layout_marginTop="40sp"
+                android:layout_marginStart="20sp"
+                android:layout_marginEnd="20sp">
+            </FrameLayout>
+
+            <View
+                android:id="@+id/settings_aux_view4"
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:layout_marginStart="15sp"
+                android:layout_marginEnd="15sp"
+                app:layout_constraintTop_toBottomOf="@+id/settings_frame3"
+                app:layout_constraintBottom_toTopOf="@+id/settings_lay4"
+                android:background="@color/dark_violet_trans"
+                android:visibility="invisible">
+            </View>
+
+            <LinearLayout
+                android:id="@+id/settings_lay4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/settings_lay3"
+                android:layout_marginTop="40sp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="35sp"
+                        android:layout_height="35sp"
+                        android:layout_weight="1"
+                        android:src="@drawable/block_icon">
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Blocked accounts"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/timeline"
+                        android:layout_gravity="center"
+                        android:gravity="center">
+                    </TextView>
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/settings_btn4"
+                    android:layout_width="20sp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="20sp"
+                    android:background="@color/trans"
+                    android:src="@drawable/right_arrow_simple"
+                    android:scaleType="centerInside"
+                    android:layout_gravity="center">
+                </ImageButton>
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/settings_frame4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/settings_lay4"
+                android:visibility="invisible"
+                android:layout_marginTop="40sp"
+                android:layout_marginStart="20sp"
+                android:layout_marginEnd="20sp">
+            </FrameLayout>
+
+            <View
+                android:id="@+id/settings_aux_view5"
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:layout_marginStart="15sp"
+                android:layout_marginEnd="15sp"
+                app:layout_constraintTop_toBottomOf="@+id/settings_frame4"
+                app:layout_constraintBottom_toTopOf="@+id/settings_btn5"
+                android:background="@color/dark_violet_trans"
+                android:visibility="invisible">
+            </View>
+
+            <View
+                android:id="@+id/settings_aux_view6"
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:background="@color/dark_violet_trans"
+                android:layout_marginStart="15sp"
+                android:layout_marginEnd="15sp"
+                app:layout_goneMarginTop="20sp"
+                app:layout_constraintTop_toBottomOf="@+id/settings_lay1"
+                app:layout_constraintBottom_toTopOf="@+id/settings_lay2"
+                android:layout_marginTop="15sp">
+            </View>
+
+            <View
+                android:id="@+id/settings_aux_view7"
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:background="@color/dark_violet_trans"
+                android:layout_marginStart="15sp"
+                android:layout_marginEnd="15sp"
+                app:layout_goneMarginTop="20sp"
+                app:layout_constraintTop_toBottomOf="@+id/settings_lay2"
+                app:layout_constraintBottom_toTopOf="@+id/settings_lay3"
+                android:layout_marginTop="15sp">
+            </View>
+
+            <View
+                android:id="@+id/settings_aux_view8"
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:background="@color/dark_violet_trans"
+                android:layout_marginStart="15sp"
+                android:layout_marginEnd="15sp"
+                app:layout_goneMarginTop="20sp"
+                app:layout_constraintTop_toBottomOf="@+id/settings_lay3"
+                app:layout_constraintBottom_toTopOf="@+id/settings_lay4"
+                android:layout_marginTop="15sp">
+            </View>
+
+            <Button
+                android:id="@+id/settings_btn5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign out"
+                android:drawableLeft="@drawable/sign_out_icon_sized"
+                android:background="@color/trans"
+                app:layout_constraintTop_toBottomOf="@+id/settings_lay4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="40sp"
+                android:paddingBottom="50sp"
+                android:textSize="20sp"
+                android:fontFamily="@font/timeline"
+                android:textColor="@color/light_black">
+            </Button>
+
+            <View
+                android:id="@+id/settings_aux_view9"
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:background="@color/dark_violet_trans"
+                android:layout_marginStart="15sp"
+                android:layout_marginEnd="15sp"
+                app:layout_goneMarginTop="20sp"
+                app:layout_constraintTop_toBottomOf="@+id/settings_lay4"
+                app:layout_constraintBottom_toTopOf="@+id/settings_btn5"
+                android:layout_marginTop="15sp">
+            </View>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/settings_btn5"
+                android:layout_marginTop="25sp"
+                android:text="©Copyright omuletzu"
+                android:textSize="10sp"
+                android:textColor="@color/light_black"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:fontFamily="@font/timeline"
+                android:layout_marginBottom="20sp">
+            </TextView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/settings_delete_warning_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/settings_delete_warning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Are you sure?"
+            android:textColor="@color/light_black"
+            android:textSize="20sp"
+            android:fontFamily="@font/timeline"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:gravity="center">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/settings_delete_warning"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/settings_delete_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Yes"
+                android:textSize="15sp"
+                android:fontFamily="@font/timeline"
+                android:background="@color/trans"
+                android:textColor="@color/light_black"
+                android:drawableLeft="@drawable/yes_icon_sized">
+            </Button>
+
+            <Button
+                android:id="@+id/settings_delete_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="No"
+                android:textSize="15sp"
+                android:fontFamily="@font/timeline"
+                android:background="@color/trans"
+                android:textColor="@color/light_black"
+                android:drawableLeft="@drawable/x_icon_sized">
+            </Button>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/settings_dark_restart_warning_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/settings_dark_restart_warning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="App restart required"
+            android:textColor="@color/light_black"
+            android:textSize="20sp"
+            android:fontFamily="@font/timeline"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:gravity="center">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/settings_dark_restart_warning"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/settings_dark_restart_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="OKAY"
+                android:textSize="15sp"
+                android:fontFamily="@font/timeline"
+                android:background="@color/trans"
+                android:textColor="@color/light_black"
+                android:drawableLeft="@drawable/yes_icon_sized">
+            </Button>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

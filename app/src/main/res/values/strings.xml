@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">ART HUB</string>
+    <string name="login_appname">ART HUB</string>
+    <string name="first_login_frame1"><b><u>Welcome</u></b>\n\n<b>-></b> You are one of a kind person for choosing to use \"Art Hub\".\n\n<b>-></b> Feel free to explore pieces of art and battle with artists all around the world.\n\n<b>-></b> Whether you are an aspiring artist, an art enthusiast, or simply curious about the creative world, we\'ve got something extraordinary for you.\n\n:D</string>
+    <string name="first_login_frame2"><b><u>Battle Art</u></b>\n\n<b>-></b> Join artists worldwide in thrilling art battles. Compete in timed challenges, earn points, and climb the leaderboard. Express your unique style and connect with the art community. Ready to unleash your creativity?\n\n<b><u>Explore the community</u></b>\n\n<b>-></b> Explore a world of artistic brilliance. Dive into a variety of arts, done by artists all around the globe. Immerse yourself in a universe of creativity and inspiration.\n\n<b><u>Share with the community</u></b>\n\n<b>-></b> Be the artist you\'ve always wanted to be. Upload and share your creations with the world. Your art deserves to shine, so join the creative community and let your talent flourish.\n\n<b><u>Sketch studio</u></b>\n\n<b>-></b> Unleash your creativity with in-app sketching, get started on your artistic journey today!</string>
+    <string name="add_your_art"><u>Add your art</u></string>
+    <string name="first_login_frame3"><b><u>Behavior expectations</u></b>\n\n<b>-></b> Promote good behavior within our community. Your actions and attitude set the standard for others to emulate. Let\'s foster a harmonious and respectful environment together, as failure to do may lead to consequences!\n\n<b><u>Your data is safe here</u></b>\n\n<b>-></b> Your data\'s safety is paramount. We employ the latest security measures to ensure your information remains confidential and secure. Rest easy, knowing that your privacy is our top priority.</string>
+    <string name="change_name">Change</string>
+    <string name="country"><u>Country:</u></string>
+    <string name="total_uploads"><u>Total uploads:</u></string>
+    <string name="email"><u>E-mail:</u></string>
+    <string name="phone_number"><u>Phone number:</u></string>
+    <string name="edit_username"><u>Username:</u></string>
+    <string name="edit_bio"><u>Bio:</u></string>
+    <string name="edit_phone"><u>Phone number:</u></string>
+    <string name="edit_country"><u>Country:</u></string>
+    <string name="edit_profile"><u>Edit profile</u></string>
+    <string name="new_password"><u>New password</u></string>
+    <string name="conf_new_pass"><u>Confirm password</u></string>
+    <string name="change_data"><u>Change personal data</u></string>
+    <string name="delete_acc"><u>Delete account</u></string>
+    <string name="restrict_notif"><u>Restrict notifications</u></string>
+    <string name="quiet_hrs"><u>Quiet hours</u></string>
+    <string name="block_unblock"><u>Block / Unblock users</u></string>
+    <string name="report_users"><u>Report users</u></string>
+    <string name="mutual_block"><u>Mutual unblock</u></string>
+    <string name="reason"><u>Reason</u></string>
+    <string name="mutual_unblock"><b> ->Users down below will be unblocked after</b><u> one week</u></string>
+    <string name="optional">* <u>Details</u></string>
+    <string name="following"> -><u>This is who you are following</u></string>
+    <string name="following_title"><u>Following</u></string>
+</resources>

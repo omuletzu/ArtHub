@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_explore"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@color/blue_comb3"
+                android:scaleType="centerCrop">
+            </ImageView>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/logo_doc_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="doc type"
+                    android:textColor="@color/light_gray"
+                    android:fontFamily="@font/timeline"
+                    android:textSize="40sp"
+                    android:padding="6sp"
+                    android:gravity="center"
+                    android:background="@color/trans"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+                </TextView>
+
+                <ImageView
+                    android:id="@+id/art_preview_img_type"
+                    android:layout_width="35sp"
+                    android:layout_height="35sp"
+                    android:scaleType="fitXY"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/logo_doc_type"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:src="@drawable/painting_icon">
+                </ImageView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3sp"
+            android:background="@color/dark_violet"
+            app:layout_constraintTop_toBottomOf="@+id/logo">
+        </View>
+
+        <ScrollView
+            android:id="@+id/add_art_preview_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:layout_width="35sp"
+                        android:layout_height="35sp"
+                        android:id="@+id/add_back"
+                        android:src="@drawable/left_arrow"
+                        android:scaleType="fitXY"
+                        android:background="@color/trans"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20sp">
+                    </ImageButton>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/preview_username"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Username"
+                            android:fontFamily="@font/timeline"
+                            android:textSize="20sp"
+                            android:textColor="@color/light_black">
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/preview_country"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="(Country)"
+                            android:fontFamily="@font/timeline"
+                            android:textSize="18sp"
+                            android:textColor="@color/light_black"
+                            android:layout_marginLeft="10sp">
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/preview_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Description"
+                    android:layout_marginTop="20sp"
+                    android:fontFamily="@font/timeline"
+                    android:textSize="15sp"
+                    android:textColor="@color/light_black">
+                </TextView>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20sp"
+                    android:layout_marginBottom="15sp"
+                    android:layout_gravity="center">
+
+                    <View
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:id="@+id/preview_aux_view1"
+                        android:layout_width="match_parent"
+                        android:layout_height="1sp"
+                        android:background="@color/dark_violet_trans">
+                    </View>
+
+                    <FrameLayout
+                        android:id="@+id/preview_aux_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        app:layout_constraintTop_toBottomOf="@+id/preview_aux_view1">
+
+                        <VideoView
+                            android:id="@+id/preview_vid"
+                            android:visibility="invisible"
+                            android:layout_gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:elevation="10sp">
+                        </VideoView>
+
+                        <ImageView
+                            android:id="@+id/preview_img"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:elevation="10sp"
+                            android:src="@drawable/camera__icon">
+                        </ImageView>
+                    </FrameLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1sp"
+                        android:background="@color/dark_violet_trans"
+                        app:layout_constraintTop_toBottomOf="@+id/preview_aux_layout">
+                    </View>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/preview_tag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20sp"
+                    android:layout_marginStart="20sp"
+                    android:layout_marginEnd="20sp"
+                    android:gravity="center"
+                    android:fontFamily="@font/timeline"
+                    android:textColor="@color/light_black_trans"
+                    android:textSize="15sp">
+                </TextView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:background="@color/dark_violet_trans"
+                    android:layout_marginStart="15sp"
+                    android:layout_marginEnd="15sp"
+                    android:layout_marginBottom="20sp"
+                    android:layout_marginTop="20sp">
+                </View>
+
+                <FrameLayout
+                    android:id="@+id/preview_frame"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20sp"
+                    android:layout_marginStart="20sp"
+                    android:layout_marginEnd="20sp">
+                </FrameLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="30sp"
+                    android:paddingBottom="50sp">
+
+                    <Button
+                        android:layout_weight="1"
+                        android:id="@+id/add_report"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Report"
+                        android:textSize="20sp"
+                        android:layout_marginTop="20sp"
+                        android:fontFamily="@font/timeline"
+                        android:background="@color/trans"
+                        android:textColor="@color/light_black"
+                        android:layout_marginBottom="20sp"
+                        android:drawableLeft="@drawable/warning_icon_sized">
+                    </Button>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginBottom="20sp"
+                        android:layout_marginTop="20sp">
+
+                        <Button
+                            android:id="@+id/add_next"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Post"
+                            android:textSize="20sp"
+                            android:fontFamily="@font/timeline"
+                            android:background="@color/trans"
+                            android:textColor="@color/light_black"
+                            android:drawableRight="@drawable/right_arrow_sized">
+                        </Button>
+
+                        <Button
+                            android:id="@+id/add_delete"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Delete"
+                            android:textSize="20sp"
+                            android:fontFamily="@font/timeline"
+                            android:background="@color/trans"
+                            android:textColor="@color/light_black"
+                            android:drawableRight="@drawable/delete_icon_sized"
+                            android:visibility="invisible">
+                        </Button>
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/settings_delete_warning_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/settings_delete_warning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Are you sure?"
+            android:textColor="@color/light_black"
+            android:textSize="20sp"
+            android:fontFamily="@font/timeline"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:gravity="center">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/settings_delete_warning"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/settings_delete_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Yes"
+                android:textSize="15sp"
+                android:fontFamily="@font/timeline"
+                android:background="@color/trans"
+                android:textColor="@color/light_black"
+                android:drawableLeft="@drawable/yes_icon_sized">
+            </Button>
+
+            <Button
+                android:id="@+id/settings_delete_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="No"
+                android:textSize="15sp"
+                android:fontFamily="@font/timeline"
+                android:background="@color/trans"
+                android:textColor="@color/light_black"
+                android:drawableLeft="@drawable/x_icon_sized">
+            </Button>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

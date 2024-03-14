@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/add_scroll_view">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_explore">
+
+        <TextView
+            android:id="@+id/add_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_your_art"
+            android:textColor="@color/light_black"
+            android:gravity="left"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textSize="20sp"
+            android:fontFamily="@font/timeline"
+            android:padding="30sp">
+        </TextView>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/add_change_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/change_name"
+            android:drawableEnd="@drawable/change_icon_sized"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/add_img"
+            android:textColor="@color/light_black"
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="20sp"
+            android:padding="10sp"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:fontFamily="@font/timeline"
+            android:background="@drawable/change_btn_back">
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <ImageView
+            android:id="@+id/bulb_img"
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            app:layout_constraintStart_toEndOf="@+id/add_text1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="25sp"
+            android:background="@color/trans"
+            android:src="@drawable/new_post_icon">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/add_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            app:layout_constraintTop_toBottomOf="@+id/add_aux_view1"
+            android:elevation="5sp">
+        </ImageView>
+
+        <LinearLayout
+            android:id="@+id/add_vid_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/add_aux_view1">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center">
+
+                <VideoView
+                    android:id="@+id/add_vid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:elevation="5sp">
+                </VideoView>
+            </FrameLayout>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/add_input_img"
+            android:layout_width="250sp"
+            android:layout_height="200sp"
+            android:scaleType="centerInside"
+            android:background="@drawable/dashed_border_back"
+            app:layout_constraintTop_toBottomOf="@+id/add_text1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20sp"
+            android:src="@drawable/press_icon"
+            android:padding="30sp">
+        </ImageButton>
+
+        <LinearLayout
+            android:id="@+id/add_type_sel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/add_input_img"
+            android:orientation="horizontal"
+            android:layout_marginTop="20sp"
+            android:padding="10sp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/add_btn1"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Painting"
+                android:textSize="10sp"
+                android:textColor="@color/light_black"
+                android:drawableTop="@drawable/painting_icon_sized"
+                android:fontFamily="@font/regular"
+                android:background="@drawable/add_input_text_back">
+            </androidx.appcompat.widget.AppCompatButton>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/add_btn2"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Drawing"
+                android:textSize="10sp"
+                android:textColor="@color/light_black"
+                android:drawableTop="@drawable/sketch_icon_sized"
+                android:fontFamily="@font/regular"
+                android:background="@color/trans">
+            </androidx.appcompat.widget.AppCompatButton>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/add_btn3"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Photo"
+                android:textSize="10sp"
+                android:textColor="@color/light_black"
+                android:drawableTop="@drawable/camera_icon_sized"
+                android:fontFamily="@font/regular"
+                android:background="@color/trans">
+            </androidx.appcompat.widget.AppCompatButton>
+
+            <!-- <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/add_btn4"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Animation"
+                android:textSize="10sp"
+                android:textColor="@color/light_black"
+                android:drawableTop="@drawable/animation_icon_sized"
+                android:fontFamily="@font/regular"
+                android:background="@color/trans">
+            </androidx.appcompat.widget.AppCompatButton> -->
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/add_input_desc_lay"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="20sp"
+            app:layout_constraintTop_toBottomOf="@+id/add_aux_view3"
+            >
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/add_input_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Description"
+                    android:elevation="1sp"
+                    android:textSize="20sp"
+                    android:padding="18sp"
+                    android:inputType="textMultiLine"
+                    android:ellipsize="end"
+                    android:scrollbars="vertical"
+                    android:gravity="start|top"
+                    android:background="@drawable/add_input_text_back"
+                    android:fontFamily="@font/timeline">
+                </com.google.android.material.textfield.TextInputEditText>
+            </ScrollView>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/add_input_tag_lay"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="15sp"
+            app:layout_constraintTop_toBottomOf="@+id/add_input_desc_lay">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/add_input_tag"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Tags"
+                    android:elevation="1sp"
+                    android:maxLength="150"
+                    android:textSize="20sp"
+                    android:padding="18sp"
+                    android:inputType="textMultiLine"
+                    android:ellipsize="end"
+                    android:scrollbars="none"
+                    android:background="@drawable/add_input_text_back"
+                    android:fontFamily="@font/timeline">
+                </com.google.android.material.textfield.TextInputEditText>
+            </ScrollView>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageButton
+            android:id="@+id/add_tag_btn"
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:scaleType="centerInside"
+            android:textSize="20sp"
+            android:src="@drawable/plus_icon"
+            android:fontFamily="@font/regular"
+            android:background="@color/trans"
+            android:textColor="@color/light_black"
+            app:layout_constraintStart_toEndOf="@+id/add_input_tag_lay"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_input_desc_lay"
+            android:layout_marginTop="45sp">
+        </ImageButton>
+
+        <FrameLayout
+            android:id="@+id/add_frame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/add_aux_view4"
+            android:layout_marginTop="20sp"
+            android:layout_marginStart="20sp"
+            android:layout_marginEnd="20sp"
+            app:layout_constraintStart_toStartOf="parent">
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/add_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:textSize="20sp"
+            android:fontFamily="@font/timeline"
+            android:background="@color/trans"
+            android:textColor="@color/light_black"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginRight="20sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="100sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_aux_view5"
+            android:drawableRight="@drawable/right_arrow_sized">
+        </Button>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/add_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/add_input_tag_lay"
+            android:layout_marginTop="20sp"
+            android:layout_marginStart="20sp"
+            android:layout_marginEnd="20sp"
+            android:padding="20sp"
+            android:background="@drawable/add_input_text_back">
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <View
+            android:id="@+id/add_aux_view1"
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:layout_marginTop="20sp"
+            android:visibility="invisible"
+            android:background="@color/dark_violet_trans"
+            app:layout_constraintTop_toBottomOf="@+id/add_text1">
+        </View>
+
+        <View
+            android:id="@+id/add_aux_view2"
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:visibility="invisible"
+            android:background="@color/dark_violet_trans"
+            app:layout_constraintTop_toBottomOf="@+id/add_img">
+        </View>
+
+        <View
+            android:id="@+id/add_aux_view3"
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:background="@color/dark_violet_trans"
+            app:layout_constraintTop_toBottomOf="@+id/add_type_sel"
+            android:layout_marginTop="20sp"
+            android:layout_marginStart="15sp"
+            android:layout_marginEnd="15sp">
+        </View>
+
+        <View
+            android:id="@+id/add_aux_view4"
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:background="@color/dark_violet_trans"
+            app:layout_constraintTop_toBottomOf="@+id/add_recycler"
+            android:layout_marginTop="20sp"
+            android:layout_marginStart="15sp"
+            android:layout_marginEnd="15sp">
+        </View>
+
+        <View
+            android:id="@+id/add_aux_view5"
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:background="@color/dark_violet_trans"
+            app:layout_constraintTop_toBottomOf="@+id/add_frame"
+            android:layout_marginTop="20sp"
+            android:layout_marginStart="15sp"
+            android:layout_marginEnd="15sp">
+        </View>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

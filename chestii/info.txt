@@ -1,0 +1,35 @@
+-> meniu login ( optiune forgot password, remember me )
+-> meniu sign up
+-> art battle (public si privat)
+-> exploreaza
+-> add art
+-> my profile
+
+
+
+
+
+-> Art battle : sunt mai multi participanti (10 de ex, sau poate fi variabil), se da un topic, toti au la dispozitie o perioada de timp (se poate vota cat timp / sau poate fi random)
+
+	sa realizeze un obiect de arta (battle u poate fi pe categorii si fiecare intra unde vrea) (in realizarea asta trebe sa arate 3-4 poze din procesu de creatie sa arate ca nu e ai sau
+
+	ne mai gandim la asta), dupa perioada asta de timp toti trebe sa aiba incarcate fisierele si votarea se face intre ei (fiecare persoana primeste 2 lucrari si trebuie sa decida care dintre ele 
+
+	e mai buna dintre cele 2 astfel la final ajunge cea mai buna in top), la final fiecare va avea o lucrare votata, se numara cate se repeta, iar daca sunt care se repeta se repeta 
+
+	iar procesul ( sau se poate termina si se da numar egal de puncte)
+
+
+-> Exploreaza : utilizatorul poate selecta ce categorie de arta vrea sa vada (desen, tablou, sketch (alb-negru), fotografie, benzi desenate, animatie)
+		
+		sau poate alege sa caute un anumit topic si primeste din toate (unde e posibil cate ceva) (ar functiona cu taguri)
+
+-> Add art : e locul unde poti publica arta, trebuie sa zici ce fel de arta e, trebuie sa adaugi taguri (sa zici ce ai facut acolo ca daca e cautat sa fie si gasit), la arta aia poti adauga
+
+		si o descriere ( cine a contribuit daca e cazul, si poate fi adaugat utilizatorul si ceilalti pot vedea )
+
+-> My profile : e locul unde utilizatorul isi poate vedea lucrarile publicate daca are, cate puncte are si unde se claseaza pentru Art battle, poate modifica setarile, isi poate pune o 
+
+		descriere la profil, poate vedea cati urmaritori are (fara sa vada cine ii) si poate vedea cate persoane si pe cine urmareste (aici poate vedea cine ii)
+
+	

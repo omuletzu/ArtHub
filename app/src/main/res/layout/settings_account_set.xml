@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/settings_change_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change personal data"
+        android:fontFamily="@font/timeline"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:padding="10sp"
+        android:textColor="@color/dark_violet"
+        android:background="@color/trans">
+    </Button>
+
+    <Button
+        android:id="@+id/settings_terms_conds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Terms and conditions"
+        android:fontFamily="@font/timeline"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:padding="10sp"
+        android:textColor="@color/dark_violet"
+        android:background="@color/trans">
+    </Button>
+
+    <Button
+        android:id="@+id/settings_delete_acc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Disable this account"
+        android:fontFamily="@font/timeline"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:padding="10sp"
+        android:textColor="@color/dark_violet"
+        android:background="@color/trans">
+    </Button>
+
+</LinearLayout>

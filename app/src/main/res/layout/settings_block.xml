@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/settings_block_unblock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Block / Unblock users"
+        android:fontFamily="@font/timeline"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:padding="10sp"
+        android:textColor="@color/dark_violet"
+        android:background="@color/trans">
+    </Button>
+
+    <Button
+        android:id="@+id/settings_report"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Report users"
+        android:fontFamily="@font/timeline"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:padding="10sp"
+        android:textColor="@color/dark_violet"
+        android:background="@color/trans">
+    </Button>
+
+    <!-- <Button
+        android:id="@+id/settings_mut_unblock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mutual unblock"
+        android:fontFamily="@font/timeline"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:padding="10sp"
+        android:textColor="@color/dark_violet"
+        android:background="@color/trans">
+    </Button> -->
+
+</LinearLayout>

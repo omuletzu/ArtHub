@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/splash_screen"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreen"
+    android:background="@drawable/white_grey_drawable">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="25sp"
+        android:text="@string/login_appname"
+        android:textSize="45sp"
+        android:textColor="@color/light_black"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:fontFamily="@font/timeline">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="25sp"
+        android:text="©Copyright omuletzu"
+        android:textSize="10sp"
+        android:textColor="@color/light_black"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:fontFamily="@font/timeline"
+        android:layout_marginBottom="20sp">
+    </TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

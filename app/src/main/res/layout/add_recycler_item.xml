@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10sp"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/add_recycler_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Tag"
+        android:fontFamily="@font/timeline"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="@color/light_black">
+    </TextView>
+
+    <ImageButton
+        android:id="@+id/add_recycler_btn"
+        android:layout_width="35sp"
+        android:layout_height="35sp"
+        android:layout_weight="1"
+        android:src="@drawable/minus_icon"
+        android:scaleType="centerInside"
+        android:background="@color/trans">
+    </ImageButton>
+
+</LinearLayout>

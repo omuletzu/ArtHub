@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#979A9A</color>
+    <color name="light_gray">#80D0D3D4</color>
+    <color name="gray_trans">#80979A9A</color>
+    <color name="white_trans">#80FFFFFF</color>
+    <color name="red_google">#80CB4335</color>
+    <color name="black_trans">#8000</color>
+    <color name="trans">#00000000</color>
+    <color name="light_black">#D0D3D4</color>
+    <color name="light_black_trans">#80D0D3D4</color>
+    <color name="cyan">#34ebe1</color>
+    <color name="blue">#34b1eb</color>
+    <color name="cyan_trans">#8034ebe1</color>
+    <color name="blue_trans">#8034b1eb</color>
+    <color name="profile_settings">#8024759A</color>
+    <color name="blue_compl">#80862323</color>
+    <color name="blue_nav">#9765b4</color>
+    <color name="blue_nav_trans">#809765b4</color>
+    <color name="dark_violet">#219ebc</color>
+    <color name="dark_violet_trans">#8064CCD2</color>
+    <color name="for_violet1">#736B92</color>
+    <color name="for_violet2">#7D5C65</color>
+    <color name="blue_comb1">#219ebc</color>
+    <color name="blue_comb2">#8ecae6</color>
+    <color name="blue_comb3">#218198</color>
+    <color name="blue_comb4">#893A12</color>
+    <color name="blue_comb5">#80862323</color>
+    <color name="light_night_login_text_color">#801C2833</color>
+</resources>

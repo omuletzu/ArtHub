@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/app_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/app_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MenuApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".profile_following_list"
+            android:exported="false" />
+
+        <service
+            android:name=".FCMservice"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".settings_mutual_unblock"
+            android:exported="false" />
+        <activity
+            android:name=".settings_report_users"
+            android:exported="false" />
+        <activity
+            android:name=".settings_block_users"
+            android:exported="false" />
+        <activity
+            android:name=".settings_quiet_hours"
+            android:exported="false" />
+        <activity
+            android:name=".settings_restricted_notif"
+            android:exported="false" />
+        <activity
+            android:name=".settings_delete_account"
+            android:exported="false" />
+        <activity
+            android:name=".settings_change_pers_info"
+            android:exported="false" />
+        <activity
+            android:name=".settings"
+            android:exported="false" />
+        <activity
+            android:name=".edit_profile"
+            android:exported="false" />
+        <activity
+            android:name=".profile_your_gallery"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".profile_terms_and_conds"
+            android:exported="false" />
+        <activity
+            android:name=".add_art_preview"
+            android:exported="false" />
+        <activity
+            android:name=".add_cropper"
+            android:exported="false" />
+        <activity
+            android:name=".explore_anim"
+            android:exported="false" />
+        <activity
+            android:name=".explore_draw"
+            android:exported="false" />
+        <activity
+            android:name=".explore_photo"
+            android:exported="false" />
+        <activity
+            android:name=".explore_paint"
+            android:exported="false" />
+        <activity
+            android:name=".explore_global"
+            android:exported="false" />
+        <activity
+            android:name=".navigation_menu"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".first_time_login"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

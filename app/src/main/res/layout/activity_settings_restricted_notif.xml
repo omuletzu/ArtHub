@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/settings_restrict_main_lay"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".settings_change_pers_info">
+
+        <RelativeLayout
+            android:id="@+id/login_logo"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@color/blue_comb3"
+                android:scaleType="centerCrop">
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="ART HUB"
+                android:textColor="@color/black"
+                android:fontFamily="@font/timeline"
+                android:textSize="40sp"
+                android:padding="3sp"
+                android:gravity="center"
+                android:background="@color/trans">
+            </TextView>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3sp"
+            android:background="@color/dark_violet"
+            app:layout_constraintTop_toBottomOf="@+id/login_logo">
+        </View>
+
+        <ScrollView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/login_logo">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/edit_profile_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:gravity="center"
+                    android:layout_marginTop="20sp"
+                    android:layout_marginLeft="20sp">
+
+                    <ImageButton
+                        android:id="@+id/edit_profile_back"
+                        android:layout_width="35sp"
+                        android:layout_height="35sp"
+                        android:background="@color/trans"
+                        android:src="@drawable/left_arrow"
+                        android:scaleType="fitXY">
+                    </ImageButton>
+
+                    <TextView
+                        android:id="@+id/your_gallery_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/trans"
+                        android:fontFamily="@font/timeline"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:padding="5sp"
+                        android:text="@string/restrict_notif"
+                        android:textColor="@color/light_black"
+                        android:textSize="25sp">
+                    </TextView>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/settings_restrict_notif_aux_text1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/trans"
+                    android:fontFamily="@font/timeline"
+                    android:layout_weight="1"
+                    android:padding="5sp"
+                    android:text=" ->Your notifications will be restricted for users down below"
+                    android:textColor="@color/dark_violet"
+                    android:textSize="20sp"
+                    app:layout_constraintTop_toBottomOf="@+id/edit_profile_text"
+                    android:layout_marginTop="40sp"
+                    android:layout_marginStart="20sp"
+                    android:layout_marginEnd="20sp">
+                </TextView>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/add_input_tag_lay"
+                    android:layout_width="300sp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="15sp"
+                    app:layout_constraintTop_toBottomOf="@+id/settings_restrict_notif_aux_text1">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/add_input_tag"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="Type user here"
+                            android:elevation="1sp"
+                            android:maxLength="150"
+                            android:textSize="15sp"
+                            android:padding="18sp"
+                            android:inputType="textMultiLine"
+                            android:ellipsize="end"
+                            android:scrollbars="none"
+                            android:background="@drawable/add_input_text_back"
+                            android:fontFamily="@font/timeline">
+                        </com.google.android.material.textfield.TextInputEditText>
+                    </ScrollView>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <ImageButton
+                    android:id="@+id/add_tag_btn"
+                    android:layout_width="35sp"
+                    android:layout_height="35sp"
+                    android:scaleType="centerInside"
+                    android:textSize="20sp"
+                    android:src="@drawable/plus_icon"
+                    android:fontFamily="@font/regular"
+                    android:background="@color/trans"
+                    android:textColor="@color/light_black"
+                    app:layout_constraintStart_toEndOf="@+id/add_input_tag_lay"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/settings_restrict_notif_aux_text1"
+                    android:layout_marginTop="45sp">
+                </ImageButton>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/add_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/add_input_tag_lay"
+                    android:layout_marginTop="20sp"
+                    android:layout_marginStart="20sp"
+                    android:layout_marginEnd="20sp"
+                    android:padding="20sp"
+                    android:background="@drawable/add_input_text_back">
+                </androidx.recyclerview.widget.RecyclerView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/settings_warning_btn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/trans"
+        android:visibility="invisible"
+        android:fontFamily="@font/timeline"
+        android:padding="20sp"
+        android:textSize="20sp"
+        android:textColor="@color/light_black">
+    </Button>
+</RelativeLayout>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/explore_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/explore_profile_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/trans">
+        </Button>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15sp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/explore_username"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Username"
+                android:fontFamily="@font/timeline"
+                android:textSize="20sp"
+                android:textColor="@color/light_black">
+            </TextView>
+
+            <ImageView
+                android:id="@+id/explore_post_type"
+                android:layout_width="35sp"
+                android:layout_height="35sp"
+                android:scaleType="fitXY">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/explore_country"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="(Country)"
+                android:fontFamily="@font/timeline"
+                android:textSize="18sp"
+                android:textColor="@color/light_black">
+            </TextView>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/explore_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Description"
+        android:layout_marginStart="10sp"
+        android:layout_marginEnd="10sp"
+        android:layout_marginTop="15sp"
+        android:fontFamily="@font/timeline"
+        android:textSize="15sp"
+        android:textColor="@color/light_black"
+        app:layout_constraintTop_toBottomOf="@+id/explore_linear">
+    </TextView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/explore_img_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="15sp"
+        android:layout_gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/explore_description">
+
+        <View
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/preview_aux_view1"
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:background="@color/dark_violet_trans">
+        </View>
+
+        <FrameLayout
+            android:id="@+id/preview_aux_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/preview_aux_view1">
+
+            <VideoView
+                android:id="@+id/explore_vid"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elevation="10sp">
+            </VideoView>
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:background="@color/dark_violet_trans"
+            app:layout_constraintTop_toBottomOf="@+id/preview_aux_layout">
+        </View>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/explore_linear_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="15sp"
+        app:layout_constraintTop_toBottomOf="@+id/explore_img_frame">
+
+        <ImageButton
+            android:id="@+id/explore_btn1"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:scaleType="centerInside"
+            android:layout_weight="1"
+            android:background="@color/trans"
+            android:src="@drawable/peace_icon_removebg_preview">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/explore_btn3"
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:scaleType="centerInside"
+            android:layout_weight="1"
+            android:background="@color/trans"
+            android:src="@drawable/info_icon">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/explore_btn2"
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:scaleType="centerInside"
+            android:layout_weight="1"
+            android:background="@color/trans"
+            android:src="@drawable/save_icon">
+        </ImageButton>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/like_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/explore_linear_lay">
+
+        <TextView
+            android:id="@+id/like_number"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="0 NICE"
+            android:layout_marginStart="10sp"
+            android:layout_marginEnd="10sp"
+            android:layout_marginTop="15sp"
+            android:fontFamily="@font/timeline"
+            android:textSize="15sp"
+            android:textColor="@color/light_black"
+            app:layout_constraintTop_toBottomOf="@+id/explore_linear">
+        </TextView>
+
+        <TextView
+            android:id="@+id/save_number"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="0 SAVES"
+            android:layout_marginStart="10sp"
+            android:layout_marginEnd="10sp"
+            android:layout_marginTop="15sp"
+            android:fontFamily="@font/timeline"
+            android:textSize="15sp"
+            android:textColor="@color/light_black"
+            app:layout_constraintTop_toBottomOf="@+id/explore_linear">
+        </TextView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/explore_tags"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        android:gravity="center"
+        android:layout_marginTop="15sp"
+        android:fontFamily="@font/timeline"
+        android:textColor="@color/light_black_trans"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@+id/like_share">
+    </TextView>
+
+    <View
+        android:id="@+id/view_aux"
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:background="@color/dark_violet_trans"
+        android:layout_marginStart="15sp"
+        android:layout_marginEnd="15sp"
+        app:layout_constraintTop_toBottomOf="@+id/explore_tags"
+        android:layout_marginTop="15sp">
+    </View>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

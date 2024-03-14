@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enable dark mod"
+        android:fontFamily="@font/timeline"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:padding="10sp"
+        android:textColor="@color/dark_violet">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10sp">
+
+        <RadioButton
+            android:id="@+id/settings_dark_mode_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="On"
+            android:gravity="center"
+            android:fontFamily="@font/timeline"
+            android:textSize="20sp">
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/settings_dark_mode_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Off"
+            android:gravity="center"
+            android:fontFamily="@font/timeline"
+            android:textSize="20sp">
+        </RadioButton>
+
+    </LinearLayout>
+
+</LinearLayout>

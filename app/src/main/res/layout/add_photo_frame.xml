@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/add_input_text_back">
+
+    <TextView
+        android:id="@+id/photo_text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/optional"
+        android:textColor="@color/light_black"
+        android:fontFamily="@font/timeline"
+        android:textSize="25sp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="20sp">
+    </TextView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/photo_title_lay"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/photo_text1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:hint="Title"
+                android:id="@+id/photo_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elevation="1sp"
+                android:textSize="20sp"
+                android:padding="18sp"
+                android:background="@drawable/details_background"
+                android:fontFamily="@font/timeline">
+            </com.google.android.material.textfield.TextInputEditText>
+        </ScrollView>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/photo_location_lay"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40sp"
+        app:layout_constraintTop_toBottomOf="@+id/photo_title_lay"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:hint="Location"
+                android:id="@+id/photo_location"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elevation="1sp"
+                android:textSize="20sp"
+                android:padding="18sp"
+                android:background="@drawable/details_background"
+                android:fontFamily="@font/timeline">
+            </com.google.android.material.textfield.TextInputEditText>
+        </ScrollView>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/photo_camera_used_lay"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40sp"
+        app:layout_constraintTop_toBottomOf="@+id/photo_location_lay">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:hint="Camera used"
+                android:id="@+id/photo_camera_used"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elevation="1sp"
+                android:textSize="20sp"
+                android:padding="18sp"
+                android:background="@drawable/details_background"
+                android:fontFamily="@font/timeline">
+            </com.google.android.material.textfield.TextInputEditText>
+        </ScrollView>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/photo_exposure_lay"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40sp"
+        app:layout_constraintTop_toBottomOf="@+id/photo_camera_used_lay">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:hint="Exposure"
+                android:id="@+id/photo_exposure"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elevation="1sp"
+                android:textSize="20sp"
+                android:padding="18sp"
+                android:background="@drawable/details_background"
+                android:fontFamily="@font/timeline">
+            </com.google.android.material.textfield.TextInputEditText>
+        </ScrollView>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/photo_others_lay"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40sp"
+        app:layout_constraintTop_toBottomOf="@+id/photo_exposure_lay"
+        android:paddingBottom="20sp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:hint="Other facts"
+                android:id="@+id/photo_others"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elevation="1sp"
+                android:textSize="20sp"
+                android:padding="18sp"
+                android:background="@drawable/details_background"
+                android:fontFamily="@font/timeline">
+            </com.google.android.material.textfield.TextInputEditText>
+        </ScrollView>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Photo title"
+        android:textColor="@color/light_black"
+        android:fontFamily="@font/timeline"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/photo_text1"
+        app:layout_constraintBottom_toTopOf="@+id/photo_title_lay"
+        android:padding="20sp">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Photo location"
+        android:textColor="@color/light_black"
+        android:fontFamily="@font/timeline"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/photo_title_lay"
+        android:padding="20sp">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Camera used"
+        android:textColor="@color/light_black"
+        android:fontFamily="@font/timeline"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/photo_location_lay"
+        android:padding="20sp">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exposure"
+        android:textColor="@color/light_black"
+        android:fontFamily="@font/timeline"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/photo_camera_used_lay"
+        android:padding="20sp">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Other factors"
+        android:textColor="@color/light_black"
+        android:fontFamily="@font/timeline"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/photo_exposure_lay"
+        android:padding="20sp">
+    </TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

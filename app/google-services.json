@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "200575329868",
+    "project_id": "art-hub-39aae",
+    "storage_bucket": "art-hub-39aae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:200575329868:android:a915ab0ce7831d846876e9",
+        "android_client_info": {
+          "package_name": "com.example.menuapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtmTLWorQvfyCvgd7F_85TJED_eEn-9pw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

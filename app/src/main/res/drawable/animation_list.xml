@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:drawable="@drawable/gradient1"
+        android:duration="50" />
+
+    <item
+        android:drawable="@drawable/gradient2"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient3"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient4"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient5"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient6"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient7"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient8"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient9"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient10"
+        android:duration="50" />
+
+    <item
+        android:drawable="@drawable/gradient11"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient12"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient13"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient14"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient15"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient16"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient17"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient18"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient19"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient20"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient21"
+        android:duration="50" />
+
+    <item
+        android:drawable="@drawable/gradient22"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient23"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient24"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient25"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient26"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient27"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient28"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient29"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient30"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient31"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient32"
+        android:duration="50" />
+
+    <item
+        android:drawable="@drawable/gradient33"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient34"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient35"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient36"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient38"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient39"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient40"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient41"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient42"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient43"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient44"
+        android:duration="50" />
+
+    <item
+        android:drawable="@drawable/gradient45"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient46"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient47"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient48"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient49"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient50"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient51"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient52"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient53"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient54"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient55"
+        android:duration="50" />
+
+    <item
+        android:drawable="@drawable/gradient56"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient57"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient58"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient59"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient60"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient61"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient62"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient63"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient64"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient65"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient66"
+        android:duration="50" />
+
+    <item
+        android:drawable="@drawable/gradient67"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient68"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient69"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient70"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient71"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient72"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient73"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient74"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/gradient75"
+        android:duration="50" />
+
+</animation-list>
