@@ -28,4 +28,6 @@
 - **Sign in or create an account**: First of all you must login into your account or create one. For the registering step, if you don't want to use your real information just type random data.
 - **Explore**: After entering you get to the **explore** page. Here you can either search by tags or explore random posts, or go to specific categories (painting, sketch, photo).
 - **Add**: Choose between one of the 3 types, write a good description, add tags and details and hit **Next**, check all the details to be all right, then hit **Post**.
-- **Your profile**: Here you can either see your gallery (by clicking **Gallery**), or go through **Settings** where you can change your **personal information**, change to **Dark Mode**, **block** other users or sign out. Also here you can change the **avatar** or **nickname**.
+- **Your profile**: Here you can either see your gallery (by clicking **Gallery**), or go through **Settings** where you can change your **personal information**, change to **Dark Mode**, **block** other users, **delete your account** or **sign out**. Also here you can change the **avatar** or **nickname**.
+
+  
