@@ -3,4 +3,9 @@
   
 <img src="https://github.com/omuletzu/ArtHub/assets/75565975/2394eeee-a060-4cfe-a7cb-9a2b95096da1" alt="app_logo" width="300">
 
+## Features
 
+- **Explore the community**: This is a place where everyone can share their art, so you can see what others did. Also, you can react by liking, saving or even seeing details of that post. There is a search feature that is based on tags. 
+- **Add your art**: Display your artwork and don't forget to add a description, tags and even details, just in case someone is interested in what you did.
+- **Customize your profile**: You have your own profile where everyone can see details about you, like nickname, avatar and contact informations. Here you can see your gallery with all your uploaded posts and even saved and liked ones.
+- **Report**: There is a report feature, just in case a post or a user is bad for community.
