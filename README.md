@@ -14,4 +14,13 @@
 
 - **Technologies used**: this app was made in **Android Studio** and it uses **Kotlin** for frontend and **XML** for backend. Also it has **WordNET**, a lexical database and it is manipulated by **JWI** library (this is used for search by tags feature)
 - **Data Storage and Management**: user data, artwork information and other relevant data are stored in **Firebase**, a database hosted by Google.
-- **User authentication and authorization**: this is handled by **Firebase Authentication**. It requires each user to input an email and a strong password, in order to create an account
+- **User authentication and authorization**: this is handled by **Firebase Authentication**. It requires each user to input an email and a strong password, in order to create an account.I
+
+## Installation 
+
+  In order to install ArtHub on your phone, you need to get all the files on your machine, that has **Android Studio**, because using this tool, you can build the APK.
+
+  - **Step1**: Download all the files, either manually, or in your git bash use `git clone https://github.com/omuletzu/ArtHub`
+  - **Step2**: You have to open all this files as a project in **Android Studio** and build the APK, and after this, using an USB cable get the APK on your phone and run the APK
+
+## USAGE 
