@@ -12,9 +12,9 @@
 
 ## Implementation overview
 
-- **Technologies used**: this app was made in **Android Studio** and it uses **Kotlin** for frontend and **XML** for backend. Also it has **WordNET**, a lexical database and it is manipulated by **JWI** library (this is used for search by tags feature)
-- **Data Storage and Management**: user data, artwork information and other relevant data are stored in **Firebase**, a database hosted by Google.
-- **User authentication and authorization**: this is handled by **Firebase Authentication**. It requires each user to input an email and a strong password, in order to create an account.
+- **Technologies used**: This app was made in **Android Studio** and it uses **Kotlin** for frontend and **XML** for backend. Also it has **WordNET**, a lexical database and it is manipulated by **JWI** library (this is used for search by tags feature)
+- **Data Storage and Management**: User data, artwork information and other relevant data are stored in **Firebase**, a database hosted by Google.
+- **User authentication and authorization**: This is handled by **Firebase Authentication**. It requires each user to input an email and a strong password, in order to create an account.
 
 ## Installation 
 
