@@ -56,6 +56,8 @@
   <img src="https://github.com/omuletzu/ArtHub/assets/75565975/e2f19353-0704-4a61-9fbd-de8d88c61c2e" alt="Screenshot 13" width="150">
   <img src="https://github.com/omuletzu/ArtHub/assets/75565975/c32239a8-8874-43d0-b7ef-4306fb26d8ee" alt="Screenshot 14" width="150">
 
+## Credits
 
+- WordNET, JWI, Android Studio
 
   
