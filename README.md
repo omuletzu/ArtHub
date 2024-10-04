@@ -23,7 +23,7 @@
 - **Step1**: Download all the files, either manually, or in your git bash use `git clone https://github.com/omuletzu/ArtHub`
 - **Step2**: You have to open all this files as a project in **Android Studio** and build the APK, and after this, using an USB cable get the APK on your phone and run the APK
 
-## USAGE 
+## Usage
 
 - **Sign in or create an account**: First of all you must login into your account or create one. For the registering step, if you don't want to use your real information just type random data.
 
